@@ -1,0 +1,23 @@
+# Java / Maven
+/target/
+/!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+*.log
+*.class
+*.jar
+
+# IntelliJ
+.idea/
+*.iml
+
+# Node
+/frontend/node_modules/
+frontend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# env files
+*.env
+
