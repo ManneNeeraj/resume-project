@@ -1,0 +1,109 @@
+/* Overall layout */
+.dashboard-container {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafc;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.dashboard-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.4rem;
+  color: #1e3a8a;
+}
+
+.dashboard-header .subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Navigation */
+.dashboard-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+.nav-btn {
+  background-color: #fff;
+  border: 1px solid #1e3a8a;
+  color: #1e3a8a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+.nav-btn.active {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+/* Dashboard content */
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 30px 0;
+  width: 90%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #1e3a8a;
+}
+
+.action-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #3b82f6;
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}

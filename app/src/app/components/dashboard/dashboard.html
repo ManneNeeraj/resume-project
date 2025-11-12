@@ -1,0 +1,35 @@
+<div class="dash-wrap">
+  <header class="dash-header" id="resume-title">
+    <h1>Welcome to Resume Project</h1>
+    <p class="lead">Build and manage your professional resume in one place.</p>
+  </header>
+
+  <main class="dash-card" role="main" aria-labelledby="resume-title">
+    <!-- decorative blob -->
+    <div class="decor-blob" aria-hidden="true"></div>
+
+    <div class="message">
+      <span class="star">✨</span>
+
+      <span class="text" *ngIf="!loading && !usersExist">
+        New here? Create your account by clicking <strong>Sign up</strong>.
+      </span>
+
+      <span class="text" *ngIf="!loading && usersExist">
+        👋 Looks like an account exists. Please <strong>Login</strong> below.
+      </span>
+
+      <span class="text" *ngIf="loading">Checking account status…</span>
+    </div>
+
+    <nav class="actions" aria-label="Primary actions">
+      <!-- primary (colored) and secondary (outline) -->
+      <a routerLink="/signup" class="btn primary" role="button">Sign up</a>
+      <a routerLink="/login" class="btn secondary" role="button">Login</a>
+    </nav>
+  </main>
+
+  <footer class="dash-foot">
+    <small>© 2025 Resume Project</small>
+  </footer>
+</div>
